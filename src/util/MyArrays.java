@@ -1,6 +1,8 @@
 package util;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import objects.Person;
 
@@ -195,10 +197,43 @@ public class MyArrays {
 
 		return null;
 	}
+	
+	public static ArrayList<Person> sortedByAge(Person[] list, boolean isINC) {
+		// Tao tap hop trung gian
+		ArrayList<Person> tmp = new ArrayList<>();
+		
+		// Sao chep mang sang tap hop
+		Collections.addAll(tmp, list);
+		
+		if(isINC) {
+			Collections.sort(tmp);			
+		} else {
+			Collections.sort(tmp, Collections.reverseOrder());			
+		}		
+		// Tra ve ket qua
+		return tmp;
+	}
+	
+	public static ArrayList<Person> sortedByName(Person[] list, boolean isINC) {
+		// Tao tap hop trung gian
+		ArrayList<Person> tmp = new ArrayList<>();
+		
+		// Sao chep mang sang tap hop
+		Collections.addAll(tmp, list);
+		
+		if(isINC) {
+			Collections.sort(tmp, new sortByName());			
+		} else {
+			Collections.sort(tmp, new sortByName().reversed());			
+		}		
+		
+		// Tra ve ket qua
+		return tmp;
+	}
 
 	public static void main(String[] args) {
 		// Generate array
-		int[][] arrInt = MyArrays.generateArray(5, 5);
+//		int[][] arrInt = MyArrays.generateArray(5, 5);
 
 		// Show array
 //		MyArrays.showArr(arrInt);
@@ -217,8 +252,32 @@ public class MyArrays {
 //		MyArrays.showPerson(persons);
 		
 		// Search person by name
-		Person[] personsResult = MyArrays.searchPersonsByName(persons, "Anh");
+//		Person[] personsResult = MyArrays.searchPersonsByName(persons, "Anh");
+		ArrayList<Person> results = MyArrays.sortedByName(persons, false);
 		
-		MyArrays.showPerson(personsResult);
+		MyArrays.showPerson(results);
 	}
 }
+
+class sortByName implements Comparator<Person> {
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		// TODO Auto-generated method stub
+		String name1 = o1.getFirstName();
+		String name2 = o2.getFirstName();
+		
+		// Bien xac nhan vi tri can cat name sau cung
+		byte at = (byte)name1.lastIndexOf(" ");
+		if(at != -1) {
+			name1 = name1.substring(at + 1);
+		}
+		at = (byte)name2.lastIndexOf(" ");
+		if(at != -1) {
+			name2 = name2.substring(at + 1);
+		}
+		return name1.compareToIgnoreCase(name2);
+	}
+	
+}
+
