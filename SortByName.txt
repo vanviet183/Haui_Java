@@ -1,0 +1,72 @@
+     STT       Ho Ten              Tuoi      
+     3         Hoàng Huyền Anh     20        
+     6         Đoàn Yến Anh        18        
+     7         Vũ Hải Anh          23        
+     10        Nguyễn Minh Anh     22        
+     12        Đoàn Châu Anh       19        
+     14        Linh Yến Anh        22        
+     17        Linh Minh Anh       21        
+     19        Nguyễn Huy Anh      19        
+     21        Mạnh Anh            18        
+     27        Đỗ Yến Anh          20        
+     28        Ngô Minh Anh        18        
+     32        Lương Yến Anh       21        
+     35        Mạnh Minh Anh       21        
+     43        Phan Minh Anh       18        
+     45        Ngô Châu Anh        21        
+     47        Linh Anh            23        
+     48        Hoàng Huy Anh       21        
+     50        Lương Yến Anh       19        
+     52        Đoàn Anh            23        
+     53        Hoàng Anh           18        
+     56        Đoàn Yến Anh        20        
+     60        Vũ Tuấn Anh         21        
+     66        Đào Yến Anh         21        
+     69        Vũ Anh              22        
+     23        Vũ Bảo              19        
+     2         Đào Châu            20        
+     13        Vũ Châu             21        
+     22        Hoàng Minh Châu     18        
+     24        Đào Châu            20        
+     36        Đào Châu            18        
+     40        Đỗ Châu             21        
+     41        Vũ Minh Châu        23        
+     64        Phan Châu           20        
+     16        Mạnh Hân            20        
+     26        Phan Hân            20        
+     34        Phạm Hân            22        
+     44        Ngô Hân             21        
+     29        Phạm Hùng           22        
+     61        Phạm Hùng           22        
+     25        Đoàn Hồng           23        
+     57        Linh Hồng           21        
+     39        Đoàn Khải           18        
+     49        Phan Khải           20        
+     51        Nguyễn Khải         20        
+     67        Nguyễn Khải         21        
+     70        Đào Khải            19        
+     46        Lê Linh             19        
+     54        Phạm Linh           22        
+     1         Nguyễn Nam          18        
+     4         Đỗ Nam              18        
+     20        Đoàn Nam            22        
+     30        Đoàn Nam            19        
+     37        Nguyễn Nam          21        
+     33        Lương Thuý          23        
+     5         Vũ Trang            18        
+     8         Đoàn Trang          23        
+     18        Nguyễn Trang        22        
+     59        Lương Trang         19        
+     62        Nguyễn Trang        18        
+     9         Ngô Anh Tuấn        18        
+     31        Lê Anh Tuấn         23        
+     55        Hoàng Anh Tuấn      23        
+     63        Đỗ Anh Tuấn         19        
+     68        Đào Anh Tuấn        20        
+     42        Ngô Việt            18        
+     38        Lương Vũ            21        
+     11        Vũ Yến              18        
+     15        Ngô Yến             18        
+     58        Nguyễn Yến          22        
+     65        Phạm Yến            22        
+   Tong so: 70             

@@ -30,5 +30,11 @@ public class TestProduct {
 		System.out.println("Search product name Mercedes: ");
 		System.out.println(productImpl.searchByName(products, "Mer"));
 		
+		System.out.println("Search product date of manufacture: ");
+		System.out.println(productImpl.searchByDateOfManufacture(products, "2018"));
+		
+		System.out.println("Search product name Mercedes: ");
+		System.out.println(productImpl.searchByPrice(products, 22_000_000.0));
+		
 	}
 }

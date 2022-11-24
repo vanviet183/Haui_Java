@@ -28,12 +28,12 @@ public class MyHomeworks {
 	 * The method is used to count string in string
 	 * @return
 	 */
-	public static Map<String, Integer> countStringInString(String str) {
-		if(str.charAt(0) == '@') {
+	public static Map<String, Integer> countStringInString(String str, char ch) {
+		while(str.charAt(0) == ch) {
 			str = str.substring(1);
 		}
-		String strNew = str.replaceAll("\\@+", "@");
-		String[] strs = strNew.split("@");
+		String strNew = str.replaceAll("\\" + ch + "+", Character.toString(ch));
+		String[] strs = strNew.split(Character.toString(ch));
 		
 		Map<String, Integer> map = new HashMap<>();
 		for(String s : strs) {
@@ -44,6 +44,12 @@ public class MyHomeworks {
 			}
 		}
 		return map;
+	}
+	
+	public static void printStatictic(Map<String, Integer> words) {
+		for(Map.Entry<String, Integer> e : words.entrySet()) {
+			System.out.println(e.getKey() + " - " + e.getValue());
+		}
 	}
 	
 	public static String changeSubstring(String str, String s) { 
@@ -82,12 +88,12 @@ public class MyHomeworks {
 	
 	public static void main(String[] args) {
 		String fullName = "       NgUyEn 00   vA88n     viE555t       ";
-//		String strFacebook = "@dcb@@@ghu@@abc@abc@@@ghu@omn@@min";
+		String strFacebook = "@@adc@@@@brk@@adc@oip@oip@brk@adc@@adc@qwe";
 //		System.out.println(MyHomeworks.validateFullName(fullName));
-//		System.out.println(countStringInString(strFacebook));
+		MyHomeworks.printStatictic(countStringInString(strFacebook, '@'));
 //		System.out.println(changeSubstring(fullName, "vA88n"));
-		String str1 = "Nguyen Van Viet";
-		String str2 = "nguyen van viet";
-		System.out.println(percentEqualTwoString(str1, str2, true));
+//		String str1 = "Nguyen Van Viet";
+//		String str2 = "nguyen van viet";
+//		System.out.println(percentEqualTwoString(str1, str2, true));
 	}
 }
